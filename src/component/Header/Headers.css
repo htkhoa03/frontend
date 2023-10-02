@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+    rgba(255, 241, 247, 0.5) 5px 10px 15px;
+    padding: 0 20px;
+}
+
+.Logo {
+  width: 20rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Logo img {
+  width: 15rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.menu-link {
+  position: relative;
+  width: 80rem;
+}
+
+.menu-link ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-link ul li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 4rem;
+  background: black;
+  border-radius: 20px;
+}
+
+.menu-link ul li a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background: rgb(252, 252, 252);
+  color: black;
+  width: 14.5rem;
+  height: 3.5rem;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.menu-link ul li:hover {
+  transform-origin: left;
+  transition: 0.8s;
+  background: #c56e33;
+}
+
+.menu-link ul li a:hover {
+  transform-origin: left;
+  transition: 0.8s;
+  background: #c56e33;
+  color: white;
+}
+
+.searchBar {
+  width: 20rem;
+  height: 3rem;
+  display: flex;
+  border: 2px #000000 solid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+}
+
+.searchBar input {
+  width: 16rem;
+  background: transparent;
+  flex: 1;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+}
+
+.searchBar button {
+  outline: 0 !important;
+  border: 0 !important;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.searchBar .searchicon {
+  font-size: 1.5rem;
+}
+
+.button-container {
+  position: relative;
+  display: flex;
+  width: 18rem;
+  height: 40px;
+  align-items: center;
+  justify-content: space-center;
+  border-radius: 10px;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  background: #c56e33;
+  color: #fff;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.Hamburger-menu {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+}
+
+.Hamburger-menu a {
+  text-decoration: none;
+  color: #000; 
+}
+
+.Hamburger-menu a svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.Hamburger-menu a:hover {
+  color: #c56e33; 
+}
+
+
+
+
+@media (max-width: 1124px) {
+  .main-nav {
+    width: 100%;
+  }
+
+  .menu-link {
+    width: 50%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .main-nav {
+    width: 100%;
+    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+  }
+
+  .menu-link {
+    width: 50%;
+  }
+}
+
+@media (max-width: 844px) {
+  .main-nav {
+    width: 100%;
+  }
+  .Logo {
+    width: 500rem;
+  }
+  .menu-link {
+    width: 50%;
+  }
+  .menu-link ul li {
+    width: 6rem;
+    height: 4rem;
+    padding: 2px;
+  }
+  .menu-link ul li a {
+    font-size: 0.8rem;
+  }
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
