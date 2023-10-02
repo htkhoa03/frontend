@@ -6,8 +6,10 @@ const App = () => {
   return (
     <>
       <Header />
-
-      {/* <Footer /> */}
+      <div>
+        Hello
+      </div>
+      <Footer />
     </>
   );
 };
